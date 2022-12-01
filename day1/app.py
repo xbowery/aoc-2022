@@ -1,6 +1,6 @@
 def main():
     # Read file
-    file = open("input.txt", "r").readlines()
+    file = open("input.txt").readlines()
 
     # Regex to filter out file input
     input = [r.strip('\n\r') for r in file]
