@@ -1,6 +1,6 @@
 import os
-import requests
 
+import requests
 from dotenv import load_dotenv
 
 load_dotenv("./.env")
@@ -30,7 +30,6 @@ def get_day():
         except (ValueError, TypeError):
             print("Sorry, please only enter an integer from 1 to 24.")
     return day
-
 
 
 if __name__ == "__main__":
