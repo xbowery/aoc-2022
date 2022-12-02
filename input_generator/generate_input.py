@@ -23,12 +23,11 @@ def get_day():
     while not valid:
         try:
             day = int(input("Which day would you like to solve (1 to 24)? "))
-        except TypeError:
-            print("Sorry, please only enter an integer from 1 to 24.")
-
-        if (day >= 1 and day <= 24):
-            valid = True
-        else:
+            if (day >= 1 and day <= 24):
+                valid = True
+            else:
+                print("Sorry, please only enter an integer from 1 to 24.")
+        except (ValueError, TypeError):
             print("Sorry, please only enter an integer from 1 to 24.")
     return day
 
