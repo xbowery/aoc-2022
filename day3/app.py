@@ -25,10 +25,7 @@ def part1(input: list):
         keys = list(intersect.keys())
 
         for k in keys:
-            if k >= 'a' and k <= 'z':
-                sum += ord(k) - 96
-            elif k >= 'A' and k <= 'Z':
-                sum += ord(k) - 38
+            sum += getASCIIValueChar(k)
 
     print(f"Part 1: {sum}")
 
@@ -45,12 +42,16 @@ def part2(input: list):
         keys = intersect.keys()
 
         for k in keys:
-            if k >= 'a' and k <= 'z':
-                sum += ord(k) - 96
-            elif k >= 'A' and k <= 'Z':
-                sum += ord(k) - 38
+            sum += getASCIIValueChar(k)
 
     print(f"Part 2: {sum}")
+
+
+def getASCIIValueChar(k):
+    if k >= 'a' and k <= 'z':
+        return (ord(k) - 96)
+    elif k >= 'A' and k <= 'Z':
+        return (ord(k) - 38)
 
 
 if __name__ == "__main__":
