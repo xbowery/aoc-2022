@@ -1,5 +1,5 @@
 def main():
-    file = open("input.txt", "r").readlines()[10:]
+    file = open("input.txt").readlines()[10:]
 
     input = [r.strip('\n\r') for r in file]
 
