@@ -19,12 +19,12 @@ def generate_input():
     stack9 = ['L', 'M', 'H', 'Z', 'N', 'F']
 
     return stack1, stack2, stack3, stack4, stack5, stack6,\
-           stack7, stack8, stack9
+        stack7, stack8, stack9
 
 
 def part1(input):
     stack1, stack2, stack3, stack4, stack5,\
-    stack6, stack7, stack8, stack9 = generate_input()
+        stack6, stack7, stack8, stack9 = generate_input()
     for i in input:
         number_to_move = int(i.split(' ')[1])
         move_from = i.split(' ')[3]
@@ -44,7 +44,7 @@ def part1(input):
 
 def part2(input):
     stack1, stack2, stack3, stack4, stack5,\
-    stack6, stack7, stack8, stack9 = generate_input()
+        stack6, stack7, stack8, stack9 = generate_input()
 
     for i in input:
         number_to_move = int(i.split(' ')[1])
