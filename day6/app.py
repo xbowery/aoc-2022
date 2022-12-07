@@ -40,7 +40,8 @@ def part2(input):
 def unique_values(arr):
     s = set()
     for x in arr:
-        if x in s: return False
+        if x in s:
+            return False
         s.add(x)
     return True
 
