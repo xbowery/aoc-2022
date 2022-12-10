@@ -48,12 +48,12 @@ def part2(input):
                         *front_position, *back_position,
                         direction, is_head
                     )
-                
+
                 if not has_changed:
                     break
 
                 is_head = False
-            
+
             VISITED_SET.add(position[-1])
 
     print("Part 2:", len(VISITED_SET))
